@@ -10,7 +10,42 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="search_hint">Rechercher des produits...</string>
+    <string name="search_hint">Rechercher des produits…</string>
+    <string name="search_icon">Icône de recherche</string>
+
+    <!-- Scan strings -->
+    <string name="scan_instructions">Placez un QR Code dans le cadre pour scanner</string>
+    <string name="scan_button">Scanner un QR Code</string>
+    <string name="scan_placeholder">QR Code placeholder</string>
+    <string name="back_button">Retour</string>
+
+    <!-- Product strings -->
+    <string name="error_loading_products">Impossible de charger les produits</string>
+    <string name="error_loading_product">Impossible de charger le produit</string>
+    <string name="image_product">Image du produit</string>
+
+    <!-- Cart strings -->
+    <string name="my_cart">Mon Panier</string>
+    <string name="subtotal">Sous-total</string>
+    <string name="shipping">Livraison</string>
+    <string name="total">Total</string>
+    <string name="checkout">Valider la commande</string>
+    <string name="cart_empty">Votre panier est vide</string>
+    <string name="quantity_one">1</string>
+    <string name="delete_item">Supprimer l\'article</string>
+
+    <!-- Filter strings -->
+    <string name="filter_products">Filtrer les produits</string>
+    <string name="filter_categories">Catégories</string>
+    <string name="filter_price">Prix</string>
+    <string name="filter_price_range">0€ - 1000€</string>
+    <string name="filter_sort_by">Trier par</string>
+    <string name="filter_default">Par défaut</string>
+    <string name="filter_price_asc">Prix croissant</string>
+    <string name="filter_price_desc">Prix décroissant</string>
+    <string name="filter_rating">Notes</string>
+    <string name="filter_reset">Réinitialiser</string>
+    <string name="filter_apply">Appliquer</string>
 
     <!-- Settings strings -->
     <string name="theme_title">Thème sombre</string>

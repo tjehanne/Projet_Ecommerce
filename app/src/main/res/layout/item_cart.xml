@@ -17,7 +17,7 @@
             android:id="@+id/productImage"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:contentDescription="Image du produit"
+            android:contentDescription="@string/image_product"
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
-                android:text="1"
+                android:text="@string/quantity_one"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -85,7 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
-            android:contentDescription="Supprimer l'article"
+            android:contentDescription="@string/delete_item"
             android:src="@android:drawable/ic_menu_delete"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Mon Panier"
+        android:text="@string/my_cart"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Sous-total"
+                android:text="@string/subtotal"
                 android:textSize="16sp" />
 
             <TextView
@@ -73,7 +73,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Livraison"
+                android:text="@string/shipping"
                 android:textSize="16sp" />
 
             <TextView
@@ -100,7 +100,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Total"
+                android:text="@string/total"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -121,7 +121,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:backgroundTint="@color/cart_button_background"
-        android:text="Valider la commande"
+        android:text="@string/checkout"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -131,7 +131,7 @@
         android:id="@+id/emptyCartMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Votre panier est vide"
+        android:text="@string/cart_empty"
         android:textSize="18sp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"

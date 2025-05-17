@@ -52,6 +52,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="8dp"
+                android:contentDescription="@string/search_icon"
                 android:src="@android:drawable/ic_menu_search"
                 app:tint="?android:attr/textColorSecondary" />
 
@@ -75,7 +76,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_margin="8dp"
-        android:contentDescription="Filtrer les produits"
+        android:contentDescription="@string/filter_products"
         app:icon="@drawable/ic_filter"
         app:iconGravity="textStart"
         app:iconPadding="0dp"
@@ -126,7 +127,7 @@
         android:id="@+id/errorMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Impossible de charger les produits"
+        android:text="@string/error_loading_products"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

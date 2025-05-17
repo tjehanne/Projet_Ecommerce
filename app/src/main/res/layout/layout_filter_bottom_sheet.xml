@@ -9,7 +9,7 @@
         android:id="@+id/filterTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Filtrer les produits"
+        android:text="@string/filter_products"
         android:textAlignment="center"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:textStyle="bold"
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Catégories"
+        android:text="@string/filter_categories"
         android:textAppearance="?attr/textAppearanceSubtitle1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
@@ -58,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Prix"
+        android:text="@string/filter_price"
         android:textAppearance="?attr/textAppearanceSubtitle1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/categoriesScrollView" />
@@ -68,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="0€ - 1000€"
+        android:text="@string/filter_price_range"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/categoriesScrollView" />
 
@@ -87,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Trier par"
+        android:text="@string/filter_sort_by"
         android:textAppearance="?attr/textAppearanceSubtitle1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/priceRangeSlider" />
@@ -105,25 +105,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="Par défaut" />
+            android:text="@string/filter_default" />
 
         <RadioButton
             android:id="@+id/sortPriceLowRadio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Prix croissant" />
+            android:text="@string/filter_price_asc" />
 
         <RadioButton
             android:id="@+id/sortPriceHighRadio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Prix décroissant" />
+            android:text="@string/filter_price_desc" />
 
         <RadioButton
             android:id="@+id/sortRatingRadio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notes" />
+            android:text="@string/filter_rating" />
     </RadioGroup>
 
     <com.google.android.material.button.MaterialButton
@@ -133,7 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:text="Réinitialiser"
+        android:text="@string/filter_reset"
         app:layout_constraintEnd_toStartOf="@+id/applyFiltersButton"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,7 +145,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:text="Appliquer"
+        android:text="@string/filter_apply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/resetFiltersButton"
