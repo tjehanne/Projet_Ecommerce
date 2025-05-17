@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_products">
+
+    <fragment
+        android:id="@+id/nav_products"
+        android:name="fr.epf.min2.projet_ecommerce.ui.products.ProductsFragment"
+        android:label="Produits"
+        tools:layout="@layout/fragment_products" />
+
+    <fragment
+        android:id="@+id/nav_product_detail"
+        android:name="fr.epf.min2.projet_ecommerce.ui.productdetail.ProductDetailFragment"
+        android:label="Détail du produit"
+        tools:layout="@layout/fragment_product_detail">
+        <argument
+            android:name="productId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_scan"
+        android:name="fr.epf.min2.projet_ecommerce.ui.scan.ScanFragment"
+        android:label="Scanner QR Code"
+        tools:layout="@layout/fragment_scan" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="fr.epf.min2.projet_ecommerce.ui.cart.CartFragment"
+        android:label="Panier"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="fr.epf.min2.projet_ecommerce.ui.settings.SettingsFragment"
+        android:label="@string/action_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

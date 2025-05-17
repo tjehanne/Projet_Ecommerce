@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nouvelle palette de couleurs pour le mode nuit - Thème bleu-vert -->
+    <color name="primary_200">#B2EBF2</color>
+    <color name="primary_500">#26C6DA</color>
+    <color name="primary_700">#00BCD4</color>
+
+    <!-- Couleurs adaptées au thème sombre -->
+    <color name="price_color">#81C784</color>
+    <color name="decrease_button_color">#EF5350</color>
+    <color name="increase_button_color">#81C784</color>
+    <color name="category_background">#424242</color>
+    <color name="separator">#424242</color>
+    <color name="cart_button_background">#4CAF50</color>
+    <color name="search_background">#303030</color>
+    <color name="search_stroke">#424242</color>
+
+    <!-- Couleurs pour les filtres en mode nuit -->
+    <color name="filter_chip_background">#424242</color>
+    <color name="filter_chip_selected">#26C6DA</color>
+</resources>

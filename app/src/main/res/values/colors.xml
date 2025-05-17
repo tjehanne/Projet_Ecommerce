@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_200">#80DEEA</color>
+    <color name="primary_500">#00ACC1</color>
+    <color name="primary_700">#0097A7</color>
+    <color name="secondary_200">#A5D6A7</color>
+    <color name="secondary_500">#4CAF50</color>
+    <color name="secondary_700">#388E3C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_500">#9E9E9E</color>
+
+    <color name="purple_200">@color/primary_200</color>
+    <color name="purple_500">@color/primary_500</color>
+    <color name="purple_700">@color/primary_700</color>
+    <color name="teal_200">@color/secondary_200</color>
+    <color name="teal_700">@color/secondary_700</color>
+
+    <color name="price_color">@color/secondary_500</color>
+    <color name="decrease_button_color">#F44336</color>
+    <color name="increase_button_color">@color/secondary_500</color>
+    <color name="category_background">@color/grey_300</color>
+    <color name="separator">@color/grey_300</color>
+    <color name="search_background">@color/grey_100</color>
+    <color name="search_stroke">@color/grey_300</color>
+    <color name="cart_button_background">@color/secondary_500</color>
+
+    <color name="filter_chip_background">@color/grey_300</color>
+    <color name="filter_chip_selected">@color/primary_500</color>
+    <color name="filter_chip_text_selected">#FFFFFF</color>
+
+    <color name="nav_item_selected">@color/white</color>
+    <color name="nav_item_unselected">#CCFFFFFF</color>
+</resources>
