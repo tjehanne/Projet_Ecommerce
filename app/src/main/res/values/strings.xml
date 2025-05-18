@@ -50,6 +50,11 @@
     <!-- Settings strings -->
     <string name="theme_title">Thème sombre</string>
     <string name="theme_description">Activer/désactiver le thème sombre pour l\'application</string>
+    <!-- Paramètres de thème -->
+    <string name="color_theme_title">Thème de couleur</string>
+    <string name="color_theme_description">Choisissez le thème de couleur de l\'application</string>
+    <string name="theme_applied">Le thème a été appliqué</string>
+    <string name="theme_apply">Appliquer</string>
     <string name="about_title">À propos</string>
     <string name="about_description">Application développée pour le projet Android EPF MIN2</string>
     <string name="version_info">Version 1.0</string>

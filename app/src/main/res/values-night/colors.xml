@@ -18,4 +18,5 @@
     <!-- Couleurs pour les filtres en mode nuit -->
     <color name="filter_chip_background">#424242</color>
     <color name="filter_chip_selected">#26C6DA</color>
+    <color name="filter_chip_text">@color/white</color>
 </resources>

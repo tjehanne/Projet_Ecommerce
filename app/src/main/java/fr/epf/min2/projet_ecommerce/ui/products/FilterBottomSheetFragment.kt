@@ -52,7 +52,9 @@ class FilterBottomSheetFragment : BottomSheetDialogFragment() {
         // Ajouter une puce pour "Toutes les catégories"
         val allCategoriesChip = createCategoryChip("Toutes")
         allCategoriesChip.isChecked = currentFilterOptions.category.isEmpty()
-        allCategoriesChip.setOnCheckedChangeListener { _, isChecked ->
+        updateChipTextColor(allCategoriesChip, allCategoriesChip.isChecked)
+        allCategoriesChip.setOnCheckedChangeListener { chipView, isChecked ->
+            updateChipTextColor(chipView as Chip, isChecked)
             if (isChecked) {
                 currentFilterOptions.category = ""
                 updatePriceRangeForCategory("")
@@ -64,7 +66,9 @@ class FilterBottomSheetFragment : BottomSheetDialogFragment() {
         categories.forEach { category ->
             val chip = createCategoryChip(category)
             chip.isChecked = currentFilterOptions.category == category
-            chip.setOnCheckedChangeListener { _, isChecked ->
+            updateChipTextColor(chip, chip.isChecked)
+            chip.setOnCheckedChangeListener { chipView, isChecked ->
+                updateChipTextColor(chipView as Chip, isChecked)
                 if (isChecked) {
                     currentFilterOptions.category = category
                     updatePriceRangeForCategory(category)
@@ -79,7 +83,7 @@ class FilterBottomSheetFragment : BottomSheetDialogFragment() {
             this.text = text
             isCheckable = true
             setChipBackgroundColorResource(R.color.filter_chip_background)
-            setTextColor(resources.getColor(android.R.color.black, null))
+            setTextColor(resources.getColor(R.color.filter_chip_text, null))
             setCheckedIconVisible(true)
             setChipStrokeColorResource(R.color.filter_chip_selected)
             setChipStrokeWidthResource(R.dimen.chip_stroke_width)
@@ -147,6 +151,7 @@ class FilterBottomSheetFragment : BottomSheetDialogFragment() {
                 val category = categories.getOrNull(i - 1) ?: continue
                 chip.isChecked = category == currentFilterOptions.category
             }
+            updateChipTextColor(chip, chip.isChecked)
         }
 
         // Mettre à jour le slider de prix
@@ -205,6 +210,14 @@ class FilterBottomSheetFragment : BottomSheetDialogFragment() {
 
             // Mettre à jour le texte affiché
             updatePriceRangeText()
+        }
+    }
+
+    private fun updateChipTextColor(chip: Chip, isChecked: Boolean) {
+        if (isChecked) {
+            chip.setTextColor(resources.getColor(R.color.filter_chip_text_selected, null))
+        } else {
+            chip.setTextColor(resources.getColor(R.color.filter_chip_text, null))
         }
     }
 

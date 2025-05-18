@@ -29,4 +29,15 @@
         <item name="android:textColor">@color/increase_button_color</item>
         <item name="android:text">+</item>
     </style>
+
+    <!-- Style pour la barre de navigation -->
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorSurface">?attr/colorPrimary</item>
+        <item name="colorOnSurface">?attr/colorOnPrimary</item>
+    </style>
 </resources>
