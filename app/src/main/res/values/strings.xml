@@ -56,7 +56,7 @@
     <string name="theme_applied">Le thème a été appliqué</string>
     <string name="theme_apply">Appliquer</string>
     <string name="about_title">À propos</string>
-    <string name="about_description">Application développée pour le projet Android EPF MIN2</string>
+    <string name="about_description">Application développée par Thomas Jéhanne et Méline Pham-Van-Doan dans le cadre du projet Android EPF MIN2</string>
     <string name="version_info">Version 1.0</string>
     <string name="ajouter_au_panier">Ajouter au panier</string>
     <string name="quantity">Quantité: </string>
