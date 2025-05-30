@@ -40,4 +40,34 @@
         <item name="colorSurface">?attr/colorPrimary</item>
         <item name="colorOnSurface">?attr/colorOnPrimary</item>
     </style>
+
+    <!-- Style pour les chips de filtres actifs -->
+    <style name="Widget.App.Chip.Filter" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">?attr/colorSurfaceVariant</item>
+        <item name="chipStrokeColor">?attr/colorPrimary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <item name="closeIconTint">?attr/colorPrimary</item>
+        <item name="closeIconVisible">true</item>
+        <item name="ensureMinTouchTargetSize">false</item>
+        <item name="chipMinHeight">32dp</item>
+    </style>
+
+    <!-- Style pour les chips de catégories dans le filtre -->
+    <style name="Widget.App.Chip.Category" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">?attr/colorSurfaceVariant</item>
+        <item name="chipStrokeColor">?attr/colorPrimary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="ensureMinTouchTargetSize">false</item>
+        <item name="chipMinHeight">36dp</item>
+    </style>
+
+    <!-- Style pour les chips de catégories sélectionnées -->
+    <style name="Widget.App.Chip.Category.Selected">
+        <item name="chipBackgroundColor">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="chipStrokeColor">?attr/colorPrimary</item>
+    </style>
 </resources>

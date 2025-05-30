@@ -9,6 +9,11 @@
         <item name="colorSecondary">@color/secondary_500</item>
         <item name="colorSecondaryVariant">@color/secondary_700</item>
         <item name="colorOnSecondary">@color/black</item>
+        <!-- Surface colors for chips and other components -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorSurfaceVariant">@color/grey_100</item>
+        <item name="colorOnSurfaceVariant">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->

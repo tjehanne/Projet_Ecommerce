@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Thème Orange -->
+    <color name="orange_primary_200">#FFCC80</color>
+    <color name="orange_primary_500">#FF9800</color>
+    <color name="orange_primary_700">#F57C00</color>
+    <color name="orange_secondary_200">#FFAB91</color>
+    <color name="orange_secondary_500">#FF5722</color>
+    <color name="orange_secondary_700">#E64A19</color>
+</resources>

@@ -21,6 +21,7 @@ import fr.epf.min2.projet_ecommerce.ui.adapters.ProductAdapter
 import fr.epf.min2.projet_ecommerce.data.FilterOptions
 import fr.epf.min2.projet_ecommerce.data.SortOption
 import com.google.android.material.chip.Chip
+import com.google.android.material.chip.ChipDrawable
 import java.text.NumberFormat
 import java.util.Locale
 
@@ -262,13 +263,63 @@ class ProductsFragment : Fragment() {
                 onCloseAction()
             }
 
-            // Styling des chips
+            // Styling des chips en utilisant les couleurs du thème
             isCheckable = false
-            setChipBackgroundColorResource(R.color.filter_chip_background)
-            setTextColor(resources.getColor(android.R.color.black, null))
-            setCloseIconTintResource(R.color.filter_chip_selected)
+
+            // Utiliser TypedValue pour récupérer les couleurs du thème
+            val typedValue = android.util.TypedValue()
+            val theme = requireContext().theme
+
+            // Récupérer la couleur de surface variant
+            theme.resolveAttribute(
+                com.google.android.material.R.attr.colorSurfaceVariant,
+                typedValue,
+                true
+            )
+            val backgroundColor = if (typedValue.resourceId != 0) {
+                androidx.core.content.ContextCompat.getColor(
+                    requireContext(),
+                    typedValue.resourceId
+                )
+            } else {
+                typedValue.data
+            }
+
+            // Récupérer la couleur de texte sur surface variant
+            theme.resolveAttribute(
+                com.google.android.material.R.attr.colorOnSurfaceVariant,
+                typedValue,
+                true
+            )
+            val textColor = if (typedValue.resourceId != 0) {
+                androidx.core.content.ContextCompat.getColor(
+                    requireContext(),
+                    typedValue.resourceId
+                )
+            } else {
+                typedValue.data
+            }
+
+            // Récupérer la couleur primaire
+            theme.resolveAttribute(
+                com.google.android.material.R.attr.colorPrimary,
+                typedValue,
+                true
+            )
+            val strokeColor = if (typedValue.resourceId != 0) {
+                androidx.core.content.ContextCompat.getColor(
+                    requireContext(),
+                    typedValue.resourceId
+                )
+            } else {
+                typedValue.data
+            }
+
+            setChipBackgroundColor(android.content.res.ColorStateList.valueOf(backgroundColor))
+            setTextColor(textColor)
+            setCloseIconTint(android.content.res.ColorStateList.valueOf(strokeColor))
             chipStrokeWidth = resources.getDimension(R.dimen.chip_stroke_width)
-            setChipStrokeColorResource(R.color.filter_chip_selected)
+            setChipStrokeColor(android.content.res.ColorStateList.valueOf(strokeColor))
 
             // Marge pour espacer les chips
             (layoutParams as? ViewGroup.MarginLayoutParams)?.apply {

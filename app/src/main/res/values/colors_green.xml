@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Thème Vert -->
+    <color name="green_primary_200">#A5D6A7</color>
+    <color name="green_primary_500">#4CAF50</color>
+    <color name="green_primary_700">#388E3C</color>
+    <color name="green_secondary_200">#C5E1A5</color>
+    <color name="green_secondary_500">#8BC34A</color>
+    <color name="green_secondary_700">#689F38</color>
+</resources>

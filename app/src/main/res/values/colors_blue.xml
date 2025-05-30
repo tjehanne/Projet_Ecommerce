@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Thème Bleu -->
+    <color name="blue_primary_200">#90CAF9</color>
+    <color name="blue_primary_500">#2196F3</color>
+    <color name="blue_primary_700">#1976D2</color>
+    <color name="blue_secondary_200">#B2EBF2</color>
+    <color name="blue_secondary_500">#00BCD4</color>
+    <color name="blue_secondary_700">#0097A7</color>
+</resources>

@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RadioButton
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.chip.Chip
 import fr.epf.min2.projet_ecommerce.R
@@ -82,10 +81,44 @@ class FilterBottomSheetFragment : BottomSheetDialogFragment() {
         return Chip(requireContext()).apply {
             this.text = text
             isCheckable = true
-            setChipBackgroundColorResource(R.color.filter_chip_background)
-            setTextColor(resources.getColor(R.color.filter_chip_text, null))
+
+            // Utiliser TypedValue pour récupérer les couleurs du thème
+            val typedValue = android.util.TypedValue()
+            val theme = requireContext().theme
+
+            // Récupérer la couleur de surface variant
+            theme.resolveAttribute(
+                com.google.android.material.R.attr.colorSurfaceVariant,
+                typedValue,
+                true
+            )
+            val backgroundColor = if (typedValue.resourceId != 0) {
+                androidx.core.content.ContextCompat.getColor(
+                    requireContext(),
+                    typedValue.resourceId
+                )
+            } else {
+                typedValue.data
+            }
+
+            // Récupérer la couleur primaire pour le stroke
+            theme.resolveAttribute(
+                com.google.android.material.R.attr.colorPrimary,
+                typedValue,
+                true
+            )
+            val strokeColor = if (typedValue.resourceId != 0) {
+                androidx.core.content.ContextCompat.getColor(
+                    requireContext(),
+                    typedValue.resourceId
+                )
+            } else {
+                typedValue.data
+            }
+
+            setChipBackgroundColor(android.content.res.ColorStateList.valueOf(backgroundColor))
             setCheckedIconVisible(true)
-            setChipStrokeColorResource(R.color.filter_chip_selected)
+            setChipStrokeColor(android.content.res.ColorStateList.valueOf(strokeColor))
             setChipStrokeWidthResource(R.dimen.chip_stroke_width)
         }
     }
@@ -214,10 +247,76 @@ class FilterBottomSheetFragment : BottomSheetDialogFragment() {
     }
 
     private fun updateChipTextColor(chip: Chip, isChecked: Boolean) {
+        // Utiliser TypedValue pour récupérer les couleurs du thème
+        val typedValue = android.util.TypedValue()
+        val theme = requireContext().theme
+
         if (isChecked) {
-            chip.setTextColor(resources.getColor(R.color.filter_chip_text_selected, null))
+            // Récupérer la couleur de texte sur primaire
+            theme.resolveAttribute(
+                com.google.android.material.R.attr.colorOnPrimary,
+                typedValue,
+                true
+            )
+            val textColor = if (typedValue.resourceId != 0) {
+                androidx.core.content.ContextCompat.getColor(
+                    requireContext(),
+                    typedValue.resourceId
+                )
+            } else {
+                typedValue.data
+            }
+
+            // Récupérer la couleur primaire pour l'arrière-plan
+            theme.resolveAttribute(
+                com.google.android.material.R.attr.colorPrimary,
+                typedValue,
+                true
+            )
+            val backgroundColor = if (typedValue.resourceId != 0) {
+                androidx.core.content.ContextCompat.getColor(
+                    requireContext(),
+                    typedValue.resourceId
+                )
+            } else {
+                typedValue.data
+            }
+
+            chip.setTextColor(textColor)
+            chip.setChipBackgroundColor(android.content.res.ColorStateList.valueOf(backgroundColor))
         } else {
-            chip.setTextColor(resources.getColor(R.color.filter_chip_text, null))
+            // Récupérer la couleur de texte sur surface variant
+            theme.resolveAttribute(
+                com.google.android.material.R.attr.colorOnSurfaceVariant,
+                typedValue,
+                true
+            )
+            val textColor = if (typedValue.resourceId != 0) {
+                androidx.core.content.ContextCompat.getColor(
+                    requireContext(),
+                    typedValue.resourceId
+                )
+            } else {
+                typedValue.data
+            }
+
+            // Récupérer la couleur de surface variant pour l'arrière-plan
+            theme.resolveAttribute(
+                com.google.android.material.R.attr.colorSurfaceVariant,
+                typedValue,
+                true
+            )
+            val backgroundColor = if (typedValue.resourceId != 0) {
+                androidx.core.content.ContextCompat.getColor(
+                    requireContext(),
+                    typedValue.resourceId
+                )
+            } else {
+                typedValue.data
+            }
+
+            chip.setTextColor(textColor)
+            chip.setChipBackgroundColor(android.content.res.ColorStateList.valueOf(backgroundColor))
         }
     }
 
