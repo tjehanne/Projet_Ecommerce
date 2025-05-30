@@ -5,6 +5,11 @@
     <color name="primary_500">#26C6DA</color>
     <color name="primary_700">#00BCD4</color>
 
+    <!-- Couleurs grises adaptées au mode sombre -->
+    <color name="grey_100">#1E1E1E</color>
+    <color name="grey_300">#2C2C2C</color>
+    <color name="grey_500">#3F3F3F</color>
+
     <!-- Couleurs adaptées au thème sombre -->
     <color name="price_color">#81C784</color>
     <color name="decrease_button_color">#EF5350</color>
