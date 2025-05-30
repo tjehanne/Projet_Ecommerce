@@ -8,10 +8,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatDelegate
 import fr.epf.min2.projet_ecommerce.R
 import fr.epf.min2.projet_ecommerce.databinding.FragmentSettingsBinding
-import fr.epf.min2.projet_ecommerce.util.ThemeHelper
 import fr.epf.min2.projet_ecommerce.util.ThemeManager
 
 class SettingsFragment : Fragment() {
