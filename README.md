@@ -129,19 +129,10 @@ L'application utilise l'API publique [FakeStore API](https://fakestoreapi.com/) 
 - Catégories disponibles
 - Gestion des paniers (simulation)
 
-### Endpoints Utilisés
-
-- `GET /products` - Liste tous les produits
-- `GET /products/{id}` - Détails d'un produit
-- `GET /products/category/{category}` - Produits par catégorie
-- `GET /products/categories` - Liste des catégories
-- `GET /carts/user/{userId}` - Panier utilisateur
-
 ## 🎨 Design et UX
 
 ### Material Design
 
-- Composants Material Design 3
 - Couleurs adaptatives selon le thème
 - Élévations et ombres cohérentes
 - Typographie standardisée
@@ -183,68 +174,3 @@ git clone [URL_DU_REPOSITORY]
 ### Configuration
 
 Aucune configuration supplémentaire requise - l'application utilise une API publique.
-
-## 🧪 Tests
-
-### Tests Unitaires
-
-- Tests des ViewModels
-- Tests du Repository
-- Tests des utilitaires
-
-### Tests d'Interface
-
-- Tests de navigation
-- Tests d'interactions utilisateur
-- Tests d'affichage des données
-
-## 📈 Fonctionnalités Avancées
-
-### Gestion d'État
-
-- **LiveData** pour la réactivité des données
-- **StateFlow** pour les états complexes
-- Gestion des états de chargement, succès et erreur
-
-### Performance
-
-- **Mise en cache des images** avec Glide
-- **Pagination** des listes de produits
-- **Optimisation mémoire** avec ViewBinding
-
-### Sécurité
-
-- **Validation des entrées** utilisateur
-- **Gestion des erreurs** réseau
-- **État sécurisé** des fragments
-
-## 🔮 Évolutions Futures
-
-### Fonctionnalités Prévues
-
-- [ ] Authentification utilisateur
-- [ ] Historique des commandes
-- [ ] Système de favoris
-- [ ] Notifications push
-- [ ] Mode hors ligne
-- [ ] Paiement intégré
-
-### Améliorations Techniques
-
-- [ ] Migration vers Compose UI
-- [ ] Implémentation de Room Database
-- [ ] Tests automatisés complets
-- [ ] CI/CD avec GitHub Actions
-
-## 👥 Contribution
-
-Ce projet est développé dans le cadre d'un projet académique à l'EPF. Les contributions sont les
-bienvenues selon les guidelines du projet.
-
-## 📄 Licence
-
-Projet académique - EPF 4A Android
-
----
-
-**Développé avec ❤️ en Kotlin pour Android**
