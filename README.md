@@ -1,7 +1,7 @@
 # Projet E-commerce Android
 
-Application Android de commerce électronique développée en Kotlin utilisant l'architecture MVVM et
-l'API FakeStore.
+Application Android de commerce électronique développée en Kotlin et utilisant
+l'API FakeStore. Ce projet a été developpé par Thomas Jehanne et Méline Pham-Van-Doan dans le cadre du cours Appareil Mobile de MIN4.
 
 ## 📱 Aperçu
 
@@ -10,7 +10,6 @@ gestion du panier, scanner de codes QR et système de thèmes personnalisables.
 
 ## 🏗️ Architecture
 
-- **Pattern MVVM** (Model-View-ViewModel)
 - **Navigation Component** pour la navigation entre fragments
 - **Repository Pattern** pour la gestion des données
 - **Coroutines** pour les opérations asynchrones
@@ -105,17 +104,17 @@ app/src/main/java/fr/epf/min2/projet_ecommerce/
 │   └── FilterOptions.kt          # Options de filtrage
 ├── repository/                   # Couche de données
 │   └── StoreRepository.kt        # Repository principal
-├── ui/                          # Interface utilisateur
-│   ├── adapters/                # Adaptateurs RecyclerView
-│   ├── cart/                    # Module panier
-│   ├── products/                # Module produits
-│   ├── productdetail/           # Détail produit
-│   ├── scan/                    # Module scanner
-│   └── settings/               # Module paramètres
-├── util/                        # Utilitaires
-│   └── ThemeManager.kt          # Gestionnaire de thèmes
-├── App.kt                       # Classe Application
-└── MainActivity.kt              # Activité principale
+├── ui/                           # Interface utilisateur
+│   ├── adapters/                 # Adaptateurs RecyclerView
+│   ├── cart/                     # Module panier
+│   ├── products/                 # Module produits
+│   ├── productdetail/            # Détail produit
+│   ├── scan/                     # Module scanner
+│   └── settings/                 # Module paramètres
+├── util/                         # Utilitaires
+│   └── ThemeManager.kt           # Gestionnaire de thèmes
+├── App.kt                        # Classe Application
+└── MainActivity.kt               # Activité principale
 ```
 
 ## 🎯 API et Données
