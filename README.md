@@ -1,7 +1,7 @@
 # Projet E-commerce Android
 
 Application Android de commerce électronique développée en Kotlin et utilisant
-l'API FakeStore. Ce projet a été developpé par Thomas Jehanne et Méline Pham-Van-Doan dans le cadre du cours Appareil Mobile de MIN4.
+l'API FakeStore. Ce projet a été developpé par Thomas Jehanne et Méline Pham-Van-Doan dans le cadre du cours Matériels Mobiles de MIN2.
 
 ## 📱 Aperçu
 
